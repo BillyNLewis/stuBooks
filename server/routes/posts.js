@@ -5,7 +5,7 @@ import {getPosts, createPost, updatePost, deletePost,
 getUserPosts} from '../controllers/posts.js'
 const router = express.Router();
 
-//handle requests to users path
+//(handle requests to users path)
 router.get('/', getPosts);
 router.post('/', createPost);
 //update existing doc using the doc's id from url
