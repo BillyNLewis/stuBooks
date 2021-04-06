@@ -40,7 +40,7 @@ function deletePost(req,res){
   .then(() => res.send({message: 'Post deleted'})) 
 }
 
-//get all posts made by specific user
+//get all posts made by a specific user
 function getUserPosts(req,res){
   //retrieve query parameter & use it to query db
   const id = req.query.id;
