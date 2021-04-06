@@ -8,10 +8,6 @@ const postSchema = mongoose.Schema({
     selectedFile: String,
     userId: String,
     price:String,
-    watchCount: {
-        type: Number,
-        default: 0
-    },
     createdAt: {
         type: Date,
         default: new Date()
