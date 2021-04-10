@@ -1,6 +1,6 @@
 import axios from 'axios';
 //url that points to backend posts route
-const url = 'https://stubooks-server.herokuapp.com/posts';
+const url = 'https://stubooks.herokuapp.com/posts;'
 //get all posts in database
 function fetchPosts() {
   return axios.get(url);

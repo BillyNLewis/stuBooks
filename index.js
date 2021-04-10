@@ -6,6 +6,7 @@ import cors from 'cors';//alows us to share resources across multiple domains
 import postRoutes from './routes/posts.js';
 import userRoutes from './routes/users.js';
 import dotenv from 'dotenv';
+import path from 'path';
 const app = express();
 dotenv.config();
 app.use(cors());
@@ -25,4 +26,11 @@ const PORT = process.env.PORT || 5000;
 mongoose.connect(CONNECTION_URL, {useNewUrlParser: true, useUnifiedTopology: true})
     .then(() => app.listen(PORT, () => console.log('Server is running on port: ' + PORT)))
     .catch((error) => console.log(error.message));
-
+//[deployment]
+    if(process.env.NODE_ENV === 'production'){
+        // Express will serve up production build
+        app.use(express.static('client/build'));
+        app.get('*', (req, res) => {
+          res.sendFile(path.resolve(__dirname, 'client', 'build', 'index.html'));
+        });
+      }
