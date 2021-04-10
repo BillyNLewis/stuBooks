@@ -1,7 +1,7 @@
 # stuBooks
 
 Full-stack app that cuts out the middleman and allows students to sell textbooks directly to each other.<br/>
-Backend deployed on Heroku. Frontend deployed on Netlify. Here: https://stubooks.netlify.app/ <br/>
+Deployed on Heroku: https://stubooks.herokuapp.com/ <br/>
 Technologies: JavaScript, React, Redux, Material UI, MongoDB, Express, Node.js 
 
 ![stuBooks1](https://user-images.githubusercontent.com/55251651/106339563-fd3fca80-6264-11eb-8b20-8edbf508f5c7.png)
