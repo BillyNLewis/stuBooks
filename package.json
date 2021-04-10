@@ -1,21 +1,21 @@
 {
   "name": "stubooks",
   "version": "1.0.0",
-  "description": "",
+  "description": "Full-stack app that cuts out the middleman and allows students to sell textbooks directly to each other.<br/> Backend deployed on Heroku. Frontend deployed on Netlify. Here: https://stubooks.netlify.app/ <br/> Technologies: JavaScript, React, Redux, Material UI, MongoDB, Express, Node.js",
   "main": "index.js",
   "type": "module",
-  "scripts": {
-    "start": "node index.js",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client"
-  },
-  "author": "Billy N. Lewis",
-  "license": "ISC",
   "dependencies": {
     "body-parser": "^1.19.0",
     "cors": "^2.8.5",
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
-    "mongoose": "^5.11.8"
-  }
+    "mongoose": "^5.12.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client"
+  },
+  "author": "Billy N. Lewis",
+  "license": "ISC"
 }

@@ -1,7 +1,7 @@
 import axios from 'axios';
 //url that points to backend users route
-// const url = 'http://localhost:5000/users';
-const url = 'https://stubooks.herokuapp.com/users';
+const url = 'http://localhost:5000/users';
+// const url = 'https://stubooks.herokuapp.com/users';
 // post new user in db using post request
 function sendUser(newUser) {
   return axios.post(url, newUser);
